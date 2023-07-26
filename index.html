@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-@Ranfah</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/829dc1815c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo_title"><a href="#header" class="mode_color"><span>@R</span>anfah</a></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about" >Apropos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <input type="checkbox" id="switch">
+                <div class="switch-btn">
+                    <label for="switch" id="label_id">
+                        <div class="icons">
+                            <span class="L">Ligth</span>
+                            <span class="D">Dark</span>
+                        </div>
+                        <div class="icons_2">
+                            <span class="L">D</span>
+                            <span class="D">L</span>
+                        </div>
+                    </label>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text_header">
+                <p>Web Developpeur & Designeur</p>
+                <h1>C'est, <span>@R</span>anfah </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col_1">
+                    <img src="images/image.jpeg" alt="">
+                </div>
+                <div class="col_2">
+                    <h1 class="sub_title">Apropos de moi</h1>
+                    <p>Passionné par l’univers du web
+                        et doté d’un grand curiosité, je
+                        suis diplomé de l’institut
+                        supérieur en Informatique IS-
+                        INFO.Je me suis spécialisé
+                        dans le développement back-
+                        end et front-end.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Competences</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links"onclick="opentab('etudes')">Etudes</p>
+                    </div>
+                    <div class="tab-contents tab-active" id="skills">
+                        <ul>
+                            <li><span>Web Devellopeur</span><br>Creation application web</li>
+                            <li><span>UI/UX</span><br>Création site web attractive</li>
+                            <li><span>IT</span><br>Maintenance systeme</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Developpeur Web</span><br>Création d'une application web pour cacher des informations personnelles dans un fichier PDF</li>
+                            <li><span>Developpeur</span><br>Création d’une application desktop,pour la gestión d’une fiche d’analyse medicale</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="etudes">
+                        <ul>
+                            <li><span>Master</span><br>IS-INFO Ampasamadinika</li>
+                            <li><span>Licence</span><br>ISIME Behoririka</li>
+                            <li><span>BACC</span><br>Lycée Fanomezantsoa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My services</h1>
+            <div class="liste_service">
+                <div>
+                    <h2>Application Web</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+                <div>
+                    <h2>Site Web</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+                <div>
+                    <h2>Integrateur</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur iusto incidunt autem officiis esse error eaque quaerat cum ipsa natus assumenda animi obcaecati quasi perspiciatis a, nam neque.</p>
+                    <a href="#">Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">Portfolio</h1>
+            <div class="list-work">
+                <div class="work">
+                    <img src="images/1.png">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>Application web pour cacher des informations personnelles dans des fichier PDF</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.png">
+                    <div class="layer">
+                        <h3>Designer</h3>
+                        <p>Application web pour cacher des informations personnelles dans des fichier PDF</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.png">
+                    <div class="layer">
+                        <h3>Site web</h3>
+                        <p>Application web pour cacher des informations personnelles dans des fichier PDF</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub_title">Contactez-moi</h1>
+                    <p><i class="fa-solid fa-envelope"></i>faniryran01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 034 10 602 46</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/faniry-randy-28b5b9221/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/randianiaina.yrinaftouloucha"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Ranfah"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="document/faniry_cv_maj.pdf" download class="btn btn2">CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="votre nom ..." required>
+                        <input type="text" name="email" placeholder="votre email ..." required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="votre message ..."></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Ranfah, 2022-2023</p>
+        </div>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
