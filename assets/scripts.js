@@ -5,19 +5,49 @@
     pseudo: "@Ranfah",
     competences : [
         {
-            poste:"Web Developer",
-            taf: "Creation web application"
+            poste: "Web Devellopeur",
+            technos: "HTML/CSS/Javascript"
         },
         {
-            poste:"Designer",
-            taf: "Creation web application"
+            poste: "Designer",
+            technos: "Photoshop/Illustrator"
         },
     ],
     Experiences : [
         {
-            
+            poste: "Devellopeur Web",
+            taf: "Création d'une application web pour cacher des informations personnelles dans un fichier PDF",
+            dateDebut: "Juin 2021",
+            dateFin: "Novembre 2021"
+        },
+        {
+            poste: "Devellopeur",
+            taf: "Création d’une application desktop,pour la gestión d’une fiche d’analyse medicale",
+            dateDebut: "Janvier 2018",
+            dateFin: "Mars 2018"
         }
-    ]
+    ],
+    Etudes : [
+        {
+            diplome: "Master",
+            anneeDebut: "2020",
+            anneeFin: "2022",
+            ecole: "IS INFO AMPASAMADINIKA"
+        },
+        {
+            diplome: "Licence",
+            anneeDebut: "2015",
+            anneeFin: "2018",
+            ecole : "ISIME Behoririka"
+        }
+    ],
+    Contact : {
+        LinkedIn:"https://www.linkedin.com/in/faniry-randy-28b5b9221",
+        Facebook: "https://web.facebook.com/randianiaina.yrinaftouloucha",
+        Github: "https://github.com/Ranfah",
+        Telephone: "+261 34 10 602 46",
+        Mail: "faniryran01@gmail.com"
+    }
  }
 
  let sidemenu = document.getElementById('sidemenu')
@@ -120,3 +150,16 @@ toggleSwitch.addEventListener("change", (e) => {
     header_background.style.backgroundImage = 'url("/images/background_1.png")'
   }
 });
+
+let liHtml = document.querySelectorAll('li');
+let pHtml = document.querySelectorAll('p')
+
+liHtml[5].innerHTML = "<span>"+user.competences[0].poste+"</span>" +"<br>"+user.competences[0].technos
+liHtml[6].innerHTML = "<span>"+user.competences[1].poste+"</span>" +"<br>"+user.competences[1].technos
+liHtml[7].innerHTML = "<span>"+user.Experiences[0].poste+"</span>" +"<br>"+user.Experiences[0].taf
+liHtml[8].innerHTML = "<span>"+user.Experiences[1].poste+"</span>" +"<br>"+user.Experiences[1].taf
+liHtml[9].innerHTML = "<span>"+user.Etudes[0].diplome+"</span>" +"<br>"+user.Etudes[0].anneeDebut+" - "+user.Etudes[0].anneeFin +"<br>" + user.Etudes[0].ecole
+liHtml[10].innerHTML = "<span>"+user.Etudes[1].diplome+"</span>" +"<br>"+user.Etudes[1].anneeDebut+" - "+user.Etudes[1].anneeFin +"<br>" +user.Etudes[1].ecole
+
+pHtml[11].innerHTML = "<i class='fa-solid fa-envelope'>" + user.Contact.Mail
+pHtml[12].innerHTML = "<i class='fa-solid fa-phone'>" + user.Contact.Telephone
